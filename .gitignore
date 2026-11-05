@@ -1,0 +1,9 @@
+# Logs and OS noise
+.DS_Store
+Thumbs.db
+*.log
+
+# Local installs
+node_modules/
+*.bak-todoeditor-*
+*.bak

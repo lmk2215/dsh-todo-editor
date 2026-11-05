@@ -1,0 +1,9 @@
+# Bundle patch for dsh-todo-editor.
+#
+# Declared by package.json's `dsh.bundle.patch`, so the package becomes a profile
+# layer instead of an inert dependency: this insert row mounts it. The host half
+# (lib/index.js) does nothing; the work happens in the client bundle
+# (lib/client.js), which registers a header action via the slot registry.
+- insert:
+    - id: dsh-todo-editor
+      name: dsh-todo-editor
